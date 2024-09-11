@@ -1,0 +1,16 @@
+body{
+    width: 100%;
+    height: inherit;
+    overflow: hidden;
+    background-color: #2d6b22;
+    
+}
+
+button{
+   background-color: azure;
+
+}
+
+button:hover{
+    background-color: brown;
+}

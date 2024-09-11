@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+.game-board {
+    width: 100%;
+    height: 500px;
+    border-bottom: 15px solid #066b39;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff)
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 1.7s infinite linear;
+}
+.pipi{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    position: right 30px;
+    animation: pipi-animation 1.3s infinite linear;
+}
+
+
+
+
+.yoshi{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+}
+
+.jump{
+    animation: jump 500ms ease-out;
+}
+
+.nuvens{
+    position: absolute;
+    width: 300px;
+    animation: nuvens-animacao 14s infinite linear;
+}
+
+.gatos{
+    position: absolute;
+    width: 300px;
+    animation: nuvens-animacao 7s infinite linear;
+}
+.menssage{
+    position: absolute;
+    z-index: 10;
+    color: black;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.menssageStyle{
+    background: white;
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 5%;
+}
+.score {
+    position: absolute;
+    font-family: OCR A Std, monospace;
+    top: 90px;
+    left: 40px;
+    font-size: x-large;
+}
+
+@media only screen and (max-width : 1080px){
+    .menssage{
+        font-size: 50px;
+        top: 50%;
+        white-space: nowrap;
+    }
+}
+
+@keyframes  pipe-animation{
+    from{
+        right: -100px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+@keyframes  pipi-animation{
+    from{
+        right: -100px;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+
+
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+    40%{
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+    60%{
+        bottom: 180px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes nuvens-animacao{
+    from {
+        right: -300px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes gatos-animacao{
+    from {
+        right: -300px;
+    }
+    to {
+        right: 100%;
+    }
+}

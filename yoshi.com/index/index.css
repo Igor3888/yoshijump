@@ -1,0 +1,61 @@
+html{
+    width: inherit;
+    height: 100%;
+    text-align: center;
+
+}
+body{
+        width: 100%;
+        overflow: hidden;
+        background-image: url('fundo.webp.jpeg');
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+     
+     color: rgb(255, 255, 255);
+ }
+ div{
+      border: rgb(255, 255, 255) 2px solid;
+      color: rgb(0, 0, 0);
+      width: fit-content;
+      height: fit-content;
+      margin: auto;
+      padding: 1em;
+     border-radius: 10px;
+     background-color: rgb(39, 139, 44);
+     
+ }
+ 
+ form{ 
+       text-align: right;
+       }
+ form label{
+           text-align: right;
+           color: #000000        
+ }
+ form{ 
+    text-align: right;
+    }
+form input{
+        text-align: right;
+        border: rgb(0, 0, 0) 2px solid;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding: 1em;
+        border-radius: 10px;      
+}
+h1 {
+@font-face {
+    font-family: ;
+    src: url('SuperMario256.ttf');
+}
+}
+ @media (max-width: 900px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+ }
+
+
